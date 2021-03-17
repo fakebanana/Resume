@@ -4,7 +4,7 @@
 \usepackage{amssymb}
 \textheight=10in
 \pagestyle{empty}
-%\raggedbottom
+% \raggedbottom
 \raggedright
 
 %  \renewcommand{\encodingdefault}{cg}
@@ -42,7 +42,7 @@
 
 \small
 \smallskip
-\vspace*{-44pt}
+\vspace*{-80pt}
 
 \contact{Jeremy D Peterson}
 {39 Washington Sq, Salem, MA 01970}
@@ -55,28 +55,29 @@
 \begin{achievements}
 \item 20+ years of experience as a software developer
 \item SME for Kubernetes, Docker and other cloud-native technologies at Akamai
-\item Experienced in application development using C++, Python, and Javascript
+\item Experienced in application development using C++, Python, Golang, and Javascript
 \item Shipped three video games and four enterprise platforms
 \item Strong DevOps/sysadmin skills: GNU/Linux, Win32, and Mac OS X
-\item Contributed at many levels of the application development process, e.g. debugging device drivers, writing low latency socket code, reverse engineering binary protocols, writing client applications using QT, GTK, and jQuery/Django, writing regular expressions for driving integration tests via expect, designing database schemas, writing Makefiles, fixing bugs in open source projects, building platform services SDLC and DevOps, writing unit tests and regression tests, peer code review, etc.
+\item Contributed at every level of software design, implementation, and operations, e.g. writing design docs, debugging device drivers, writing socket code, reverse-engineering binary protocols, writing client applications using QT, GTK, and jQuery/Django, writing unit and integration tests, designing database schemas, writing helm charts, fixing bugs in open source projects, writing ansible playbooks, documenting ops procedures, and lots more.
 \end{achievements}
 
 \header{Employment}
 
 	\employer{Akamai} {Cambridge, MA} {2015-Current} {Software Engineer, Senior II}
 	\begin{achievements}
-	\item Designed and implemented ALSIMAC (SELinux for ALSI)
-	\item Designed and implemented a containerized environment using Docker for building and deploying software and running other internal development tools (CBE, CBE-DEV)
-	\item Designed and implemented CAKE (Kubernetes on ALSI)
+	\item Member of Installsuite team, responsible for maintaining in-house deployment tools and components of ALSI (Akamai's in-house linux distribution)
+	\item Designed and implemented "ALSIMAC" a mandatory access control system for ALSI (SELinux, Python)
+	\item Designed and implemented "CBE" and "CBE-DEV", containerized environments for building and deploying software and running other internal development tools (Docker, Packer, Python, Bash, GNU Make)
+	\item Designed and implemented "CAKE", a kubernetes distribution for ALSI (Ansible, Golang, Python, Prometheus, Elasticsearch, Kibana, Fluentd, Helm, Redis)
 	\end{achievements}
 
 	\employer{Editshare} {Allston, MA} {2008-2015} {Lead Software Engineer}
 	\begin{achievements}
 	\item Shipped "Flow" and "Ark" NLE media and archive management client applications and server infrastructure (Python, Twisted, C++, QT)
-	\item Rewrote and repackaged dozens of client applications and admin tools managed by Subversion that had been packaged and distributed using tarballs and Perl scripts on a Linux 2.4 based distro to Git managed RPM based packages, distributed on a customized Linux 2.6 based distro.
-	\item Designed and implemented a low latency pub/sub asynchronous communications architecture based on AMQP for interoperating between QT based client applications, Python daemons using Twisted, and web-based clients communicating via websockets (C++, QT, Python, AMQP)
+	\item Migrated from a bespoke tarball based Linux 2.4 based distribution to Git managed RPM based packages, distributed via a customized Linux 2.6 based distro.
+	\item Designed and implemented a low latency pub/sub architecture based on AMQP for interoperating between QT clients, Python daemons, and web clients (websockets) (C++, QT, Python, AMQP)
 	\item Designed and implemented a web based client for "Ark" (Python, Django, Twisted, jQuery)
-	\item Reviewed and backported dozens of patches for Linux kernel and Linux device drivers used on Editshare platforms
+	\item Reviewed and backported dozens of patches for Linux kernel and Linux device drivers
 	\item Contributed bug-fixes and enhancements to Samba, Twisted, Bacula, and Linux device drivers (C, C++)
 	\item Built tools and libraries for black-box testing / reverse engineering commercial software application in order to build compatible protocols and enhance interoperability (C, x86 assembly)
 	\item Acted as principal maintainer of office and development IT infrastructure
